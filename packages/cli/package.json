@@ -1,6 +1,6 @@
 {
   "name": "ecmanote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -18,10 +18,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ecmanote/local-client": "^1.0.0"
+    "@ecmanote/local-client": "^1.0.1"
   },
   "devDependencies": {
-    "@ecmanote/local-api": "^1.0.0",
+    "@ecmanote/local-api": "^1.0.1",
     "@types/node": "^14.14.41",
     "commander": "^7.2.0",
     "esbuild": "0.8.26",
