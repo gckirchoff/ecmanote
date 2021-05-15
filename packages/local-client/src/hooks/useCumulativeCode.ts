@@ -8,9 +8,17 @@ export const useCumulativeCode = (cellId: string) => {
     const showFunction = `
     import _React from 'react';
     import _ReactDOM from 'react-dom';
+    var num = 0;
+    var getRoot = () => {
+      let root = document.createElement("div");
+      root.id = \`root\${num}\`;
+      let body = document.querySelector('body');
+      body.appendChild(root);
+      num++;
+      return root;
+    };
     var show = (value) => {
-      const root = document.querySelector('#root');
-
+      let root = getRoot();
       if (typeof value === 'object') {
         if (value.$$typeof && value.props) {
           _ReactDOM.render(value, root);
@@ -20,8 +28,25 @@ export const useCumulativeCode = (cellId: string) => {
       } else {
         root.innerHTML = value;
       }
+      console.log(num);
     };
   `;
+
+    // import _React from 'react';
+    // import _ReactDOM from 'react-dom';
+    // var show = (value) => {
+    //   const root = document.querySelector('#root');
+
+    //   if (typeof value === 'object') {
+    //     if (value.$$typeof && value.props) {
+    //       _ReactDOM.render(value, root);
+    //     } else {
+    //       root.innerHTML = JSON.stringify(value);
+    //     }
+    //   } else {
+    //     root.innerHTML = value;
+    //   }
+    // };
 
     const showFunctionNotOperational = `var show = () => {}`;
     const cumulativeCode = [];
