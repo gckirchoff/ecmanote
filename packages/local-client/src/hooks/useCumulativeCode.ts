@@ -28,7 +28,6 @@ export const useCumulativeCode = (cellId: string) => {
       } else {
         root.innerHTML = value;
       }
-      console.log(num);
     };
   `;
 
