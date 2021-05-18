@@ -9,7 +9,7 @@
   "files": [
     "dist",
     "README.md",
-    "example.png"
+    "images"
   ],
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
