@@ -8,8 +8,7 @@
   },
   "files": [
     "dist",
-    "README.md",
-    "images"
+    "README.md"
   ],
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
