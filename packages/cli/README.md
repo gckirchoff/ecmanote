@@ -2,7 +2,7 @@
 
 ecmanote is a cli that allows you to write notes in markdown and run javascript, all live within your browser. Great for studying and practicing data structures and algorithms!
 
-![Example screenshot](example.png)
+![Example screenshot](./example.png)
 
 One can choose what file is created (and subsequently accessed at a later time) in the directory by adding an optional parameter `ecmanote serve example.js` to either create example.js or access example.js if it has already been created in that directory.
 
